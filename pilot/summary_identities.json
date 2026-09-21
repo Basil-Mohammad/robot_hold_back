@@ -1,0 +1,11 @@
+{
+  "n_active_instances": 1446,
+  "n_deletion_tests_total": 5437,
+  "max_err_stationarity": 4.714304068330829e-11,
+  "mean_err_stationarity": 4.3776052386754194e-14,
+  "max_err_energy": 0.00017004692927002907,
+  "mean_err_energy": 1.2971259342836902e-07,
+  "n_faithfulness_mismatches": 0,
+  "n_degenerate_instances": 297,
+  "frac_degenerate": 0.2053941908713693
+}

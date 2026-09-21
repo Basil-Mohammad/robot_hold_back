@@ -1,0 +1,78 @@
+{
+  "A1_A2": {
+    "A1_multiplier_without_deletion": {
+      "precision": 0.9017857142857143,
+      "recall": 1.0,
+      "f1": 0.948356807511737
+    },
+    "A2_deletion_without_interval_upper": {
+      "precision": 0.8211382113821138,
+      "recall": 1.0,
+      "f1": 0.9017857142857143
+    },
+    "proposed_full_method_lower": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "n_constraint_tests": 9388
+  },
+  "A3": {
+    "n_instances": 1000,
+    "n_active": 593,
+    "certified_closed_form": {
+      "mean_abs_err_vs_numeric": 3.787065169440286e-08,
+      "max_abs_err_vs_numeric": 3.500450702631497e-07,
+      "validity_rate": 1.0
+    },
+    "uncertified_random_direction_search": {
+      "mean_rel_gap_vs_numeric_optimum": 12.863402133610775,
+      "median_rel_gap_vs_numeric_optimum": 1.0052160629248559,
+      "frac_more_than_5pct_from_optimum": 0.8583473861720068,
+      "validity_rate": 1.0
+    }
+  },
+  "A4": {
+    "n": 64438,
+    "unstable_threshold_p90_sens_ratio": 0.1886522647865615,
+    "by_kappa_flag_threshold": {
+      "q5": {
+        "kappa_threshold": 1.085961889178519,
+        "precision": 0.9748603351955307,
+        "recall": 0.48743016759776536,
+        "n_flagged": 3222
+      },
+      "q10": {
+        "kappa_threshold": 1.5689360337273974,
+        "precision": 0.7524829298572315,
+        "recall": 0.7524829298572315,
+        "n_flagged": 6444
+      },
+      "q20": {
+        "kappa_threshold": 1.8597651439594847,
+        "precision": 0.46733395406579764,
+        "recall": 0.9346679081315953,
+        "n_flagged": 12888
+      },
+      "q30": {
+        "kappa_threshold": 2.1208538476154986,
+        "precision": 0.330022760190358,
+        "recall": 0.9900682805710739,
+        "n_flagged": 19332
+      }
+    },
+    "no_conditioning_baseline_precision": 0.10000310375865172
+  },
+  "A5": {
+    "normalized": {
+      "n": 1303,
+      "spearman_rho": 0.9604267291650941,
+      "spearman_p": 0.0
+    },
+    "unnormalized": {
+      "n": 1346,
+      "spearman_rho": 0.9904797420916294,
+      "spearman_p": 0.0
+    }
+  }
+}

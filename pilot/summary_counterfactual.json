@@ -1,0 +1,17 @@
+{
+  "single": {
+    "n": 584,
+    "max_abs_err": 3.53064844915707e-07,
+    "mean_abs_err": 3.6136694212898134e-08,
+    "max_rel_err": 3.550569158768282e-07,
+    "angular_resolution_deg": 0.1
+  },
+  "multi": {
+    "n": 365,
+    "bound_always_holds": true,
+    "mean_rel_gap": 0.02048871796476383,
+    "median_rel_gap": 8.729712241567002e-08,
+    "p90_rel_gap": 0.028515217002618897,
+    "max_rel_gap": 0.6114290021161616
+  }
+}

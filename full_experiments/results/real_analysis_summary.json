@@ -1,0 +1,82 @@
+{
+  "n_instances_analyzed": 64438,
+  "n_active_instances": 64438,
+  "identities": {
+    "max_err_stationarity": 0.0,
+    "mean_err_stationarity": 0.0,
+    "max_err_energy": 6.661338147750939e-16,
+    "mean_err_energy": 4.9804488684069633e-17
+  },
+  "attribution": {
+    "overall": {
+      "pred_naive": {
+        "precision": 0.5223258639791287,
+        "recall": 0.9575198511491392,
+        "f1": 0.675931792640006,
+        "f1_mean_across_seeds": 0.6784106671113843,
+        "f1_std_across_seeds": 0.031333192739347586
+      },
+      "pred_single": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_mean_across_seeds": 1.0,
+        "f1_std_across_seeds": 0.0
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_mean_across_seeds": 1.0,
+        "f1_std_across_seeds": 0.0
+      }
+    },
+    "by_category": {
+      "cause": {
+        "n": 73076,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "shadowed": {
+        "n": 66829,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "counter-acting": {
+        "n": 3242,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "bystander": {
+        "n": 501233,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      }
+    },
+    "category_counts": {
+      "bystander": 501233,
+      "cause": 73076,
+      "shadowed": 66829,
+      "counter-acting": 3242
+    },
+    "n_seeds": 10
+  },
+  "counterfactual": {
+    "n": 64438,
+    "bound_always_holds": true,
+    "mean_rel_gap": 0.0,
+    "median_rel_gap": 0.0,
+    "p90_rel_gap": 0.0,
+    "max_rel_gap": 0.0
+  },
+  "stability": {
+    "n": 64438,
+    "spearman_rho_kappa_vs_sensitivity": 0.9144906688780405,
+    "spearman_p_kappa_vs_sensitivity": 0.0,
+    "frac_any_switch": 9.311275955181725e-05
+  }
+}

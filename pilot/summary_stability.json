@@ -1,0 +1,11 @@
+{
+  "n_scenarios": 674,
+  "n_scenarios_with_nonswitch_data": 482,
+  "spearman_rho_kappa_vs_sensitivity": 0.9378271162503531,
+  "spearman_p_kappa_vs_sensitivity": 1.0202269908245353e-222,
+  "spearman_rho_kappa_vs_switchrate": 0.785861542684203,
+  "spearman_p_kappa_vs_switchrate": 2.1213607514122e-142,
+  "frac_scenarios_any_switch": 0.2922848664688427,
+  "kappa_stab_min": 1.0229901565882545e-19,
+  "kappa_stab_max": 0.9921325709943779
+}

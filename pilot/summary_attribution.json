@@ -1,0 +1,135 @@
+{
+  "overall": {
+    "pred_naive": {
+      "precision": 0.5878108688977587,
+      "recall": 0.881648629979277,
+      "f1": 0.70535138620245,
+      "support": 4343,
+      "n": 10872
+    },
+    "pred_single": {
+      "precision": 0.9162447257383967,
+      "recall": 1.0,
+      "f1": 0.9562919740173951,
+      "support": 4343,
+      "n": 10872
+    },
+    "pred_interval": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4343,
+      "n": 10872
+    },
+    "pred_shapley": {
+      "precision": 0.6832229580573952,
+      "recall": 1.0,
+      "f1": 0.8118032786885246,
+      "support": 619,
+      "n": 1323
+    }
+  },
+  "by_category": {
+    "cause": {
+      "pred_naive": {
+        "error_rate": 0.0,
+        "n": 3829,
+        "n_wrong": 0
+      },
+      "pred_single": {
+        "error_rate": 0.0,
+        "n": 3829,
+        "n_wrong": 0
+      },
+      "pred_interval": {
+        "error_rate": 0.0,
+        "n": 3829,
+        "n_wrong": 0
+      },
+      "n": 3829
+    },
+    "shadowed": {
+      "pred_naive": {
+        "error_rate": 1.0,
+        "n": 2685,
+        "n_wrong": 2685
+      },
+      "pred_single": {
+        "error_rate": 0.1478584729981378,
+        "n": 2685,
+        "n_wrong": 397
+      },
+      "pred_interval": {
+        "error_rate": 0.0,
+        "n": 2685,
+        "n_wrong": 0
+      },
+      "n": 2685
+    },
+    "counter-acting": {
+      "pred_naive": {
+        "error_rate": 1.0,
+        "n": 514,
+        "n_wrong": 514
+      },
+      "pred_single": {
+        "error_rate": 0.0,
+        "n": 514,
+        "n_wrong": 0
+      },
+      "pred_interval": {
+        "error_rate": 0.0,
+        "n": 514,
+        "n_wrong": 0
+      },
+      "n": 514
+    },
+    "bystander": {
+      "pred_naive": {
+        "error_rate": 0.0,
+        "n": 3844,
+        "n_wrong": 0
+      },
+      "pred_single": {
+        "error_rate": 0.0,
+        "n": 3844,
+        "n_wrong": 0
+      },
+      "pred_interval": {
+        "error_rate": 0.0,
+        "n": 3844,
+        "n_wrong": 0
+      },
+      "n": 3844
+    }
+  },
+  "by_category_shapley": {
+    "cause": {
+      "error_rate": 0.0,
+      "n": 565,
+      "n_wrong": 0
+    },
+    "shadowed": {
+      "error_rate": 1.0,
+      "n": 251,
+      "n_wrong": 251
+    },
+    "counter-acting": {
+      "error_rate": 0.0,
+      "n": 54,
+      "n_wrong": 0
+    },
+    "bystander": {
+      "error_rate": 0.07947019867549669,
+      "n": 453,
+      "n_wrong": 36
+    }
+  },
+  "category_counts": {
+    "bystander": 3844,
+    "cause": 3829,
+    "shadowed": 2685,
+    "counter-acting": 514
+  },
+  "n_instances_total_rows": 10872
+}

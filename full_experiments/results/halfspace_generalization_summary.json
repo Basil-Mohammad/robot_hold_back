@@ -1,0 +1,38 @@
+{
+  "n_instances_analyzed": 8000,
+  "n_active_instances": 7626,
+  "constraint_mix": {
+    "wall_linear_only_active": 4601,
+    "pillar_circular_only_active": 1132,
+    "mixed_active": 1893
+  },
+  "identities": {
+    "max_err_stationarity": 0.0,
+    "max_err_energy": 6.661338147750939e-16
+  },
+  "attribution": {
+    "overall": {
+      "pred_naive": {
+        "precision": 0.25739654997119327,
+        "recall": 0.8943711728685821,
+        "f1": 0.3997473617726783
+      },
+      "pred_single": {
+        "precision": 0.7547773531241667,
+        "recall": 1.0,
+        "f1": 0.8602542673352581
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "n_constraint_tests": 76260
+  },
+  "stability": {
+    "n": 4916,
+    "spearman_rho": 0.8786803667255816,
+    "spearman_p": 0.0
+  }
+}
