@@ -53,6 +53,11 @@ full_experiments/
     train_ppo_arm.py               4th env: PPO training entry point
     collect_rollouts_arm.py        4th env: policy rollout -> QP instance dataset
     make_arm_plot.py               4th env: figure generation
+    significance_analysis_generic.py  seed-clustered CIs + McNemar for the SAC/arm datasets
+    jacobian_counterfactual.py     Jacobian-aware closed-form counterfactual (RQ3 at m=6)
+    halfspace_counterfactual.py    linear-barrier closed-form counterfactual (non-circular walls)
+    build_user_study_items.py      builds stimulus set for the LLM-based proxy comprehension study
+    score_user_study.py            scores the blinded raters' answers against ground truth
   models/                 trained PPO policies (10 seeds) + training logs (maze)
   models_quad/            trained PPO policies (5 seeds) + training logs (quadrotor)
   models_arm/             trained PPO policies (m=6 arm) + training logs
@@ -234,14 +239,70 @@ python collect_rollouts_arm.py          # -> ../results/rollout_qp_dataset_arm.p
 python run_full_analysis.py \
     --dataset ../results/rollout_qp_dataset_arm.pkl \
     --outdir ../results_arm                # RQ1/RQ2/RQ4 on the arm dataset
-                                            # (RQ3 closed-form counterfactual
-                                            # does not apply at m=6; see paper)
 python make_arm_plot.py                 # -> ../figures/fig_arm_layout_training.png
 ```
 `full_experiments/models_arm/` holds the 3 trained PPO policies (m=6) and
 training logs; `full_experiments/results/real_analysis_summary_arm.json`
 is a copy of the analysis summary used in the paper's higher-dimensional-
 action-space section.
+
+## Jacobian-aware counterfactual (RQ3 at m=6)
+
+The closed-form counterfactual of `run_full_analysis.py` assumes the
+constraint's geometry lives directly in the 2D action space, which does
+not hold for the arm's joint-velocity action. `jacobian_counterfactual.py`
+implements and validates the paper's Jacobian-aware generalization (which
+holds exactly, not approximately, for the arm's task-space obstacle rows):
+it recomputes each row's closed-form slack using the end-effector velocity
+the nominal joint command induces (`v_pi = J(q) @ u_pi`), checks it against
+the solver's own slack, and independently re-verifies every resulting
+counterfactual certificate.
+
+```bash
+cd full_experiments/envs
+python jacobian_counterfactual.py   # -> ../results/jacobian_counterfactual_summary.json
+```
+
+## Linear-barrier counterfactual (non-circular constraints)
+
+The same closed-form idea, applied to the LINEAR (half-space) wall
+constraints of `halfspace_generalization.py`'s mixed constraint-type
+dataset -- even simpler than the circular case since the barrier is
+already affine in position. `halfspace_counterfactual.py` computes and
+independently re-verifies the certificate `d_cf = -s / alpha` for every
+violated wall row on the same real mixed-constraint trajectories.
+
+```bash
+cd full_experiments/envs
+python halfspace_counterfactual.py   # -> ../results/halfspace_counterfactual_summary.json
+```
+
+## LLM-based proxy comprehension study
+
+A small, explicitly-scoped pilot (not a human-subjects study) comparing
+how accurately a blinded automated rater identifies the true intervening
+constraint from a naive violated-constraint report vs. the paper's
+certified attribution-interval report, on 24 real maze interventions:
+
+```bash
+cd full_experiments/envs
+
+# Builds the stratified item set + the two rater-facing prompt files
+# (ground truth is kept separate so the rater never sees it).
+python build_user_study_items.py
+    # -> ../results/user_study_items.json (ground truth)
+    # -> ../results/user_study_naive_prompt.txt
+    # -> ../results/user_study_proposed_prompt.txt
+
+# The prompt files above were each given to a fresh, independent LLM
+# instance (no other context) as a rater, asked to answer every item as
+# a JSON array {item_id, predicted_constraints, confidence}; the raw
+# answers used in the paper are included as
+# ../results/naive_answers.json and ../results/proposed_answers.json so
+# the reported numbers can be reproduced without re-querying a model.
+
+python score_user_study.py          # -> ../results/user_study_summary.json
+```
 
 ## Numerical identities
 

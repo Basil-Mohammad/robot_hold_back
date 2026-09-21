@@ -1,0 +1,9 @@
+{
+  "n_samples": 8000,
+  "n_wall_rows_checked": 74354,
+  "n_violated_wall_rows": 26729,
+  "n_certificates_verified": 26729,
+  "max_certificate_residual": 1.6653345369377348e-15,
+  "mean_d_cf": 0.5323614850534506,
+  "max_d_cf": 1.3976452225349998
+}
