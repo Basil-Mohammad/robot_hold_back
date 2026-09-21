@@ -37,6 +37,9 @@ full_experiments/
     make_full_plots.py          figure generation
     significance_analysis.py    seed-clustered bootstrap CIs + paired McNemar tests
     sensitivity_analysis.py     ALPHA/K_NEAREST/SAFETY_MARGIN one-factor-at-a-time sweep
+    find_case_study.py          selects the illustrative real instance used in the paper
+    make_case_study_plot.py     figure for the illustrative instance (fig_case_study.png)
+    benchmark_overhead_highdim.py  QP-solve/attribution overhead vs. action dim m in {2,4,6}
     quad_layout.py               3rd env: open-field no-fly-zone layout
     quad_env.py                   3rd env: PlanarQuadrotorEnv (CBF-QP in the loop)
     train_ppo_quad.py             3rd env: PPO training entry point
@@ -50,6 +53,9 @@ full_experiments/
                            not stored in this repository, see below)
   run_all_seeds.sh        sequential 10-seed training driver
 
+paper/
+  paper.tex, references.bib, paper.pdf   the manuscript
+  figures/                                figures embedded in the paper
 ```
 
 ## Reproducing the results
@@ -128,6 +134,15 @@ python significance_analysis.py   # -> ../results/significance_summary.json
 
 # One-factor-at-a-time sweep of ALPHA, K_NEAREST, SAFETY_MARGIN.
 python sensitivity_analysis.py    # -> ../results/sensitivity_summary.json
+
+# Illustrative real-instance case study (Fig. 1 / Table II in the paper).
+python find_case_study.py         # selects and prints the instance
+python make_case_study_plot.py    # -> ../figures/fig_case_study.png
+
+# QP-solve / attribution overhead vs. action dimension m in {2,4,6}, at
+# p from m up to 12 candidate constraints (synthetic scenarios; the
+# solver/attribution code is dimension-generic and unmodified).
+python benchmark_overhead_highdim.py  # -> ../results/overhead_highdim_benchmark.json
 ```
 
 ## Third environment: planar quadrotor (second robotic platform)
