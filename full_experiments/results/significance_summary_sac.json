@@ -1,0 +1,40 @@
+{
+  "label": "sac",
+  "n_rows": 234780,
+  "n_seeds": 3,
+  "confidence_intervals": {
+    "naive": {
+      "f1_point": 0.6813753883418462,
+      "mean": 0.6816316050716255,
+      "lo": 0.6730217229526206,
+      "hi": 0.6926066350710901,
+      "n_boot_valid": 2000
+    },
+    "single-multiplier": {
+      "f1_point": 1.0,
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot_valid": 2000
+    },
+    "proposed": {
+      "f1_point": 1.0,
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot_valid": 2000
+    }
+  },
+  "mcnemar_proposed_vs_naive": {
+    "b": 24204,
+    "c": 0,
+    "statistic": 24202.000041315485,
+    "p_value": 0.0
+  },
+  "mcnemar_proposed_vs_single": {
+    "b": 0,
+    "c": 0,
+    "statistic": 0.0,
+    "p_value": 1.0
+  }
+}

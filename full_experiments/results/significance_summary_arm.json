@@ -1,0 +1,40 @@
+{
+  "label": "arm",
+  "n_rows": 321552,
+  "n_seeds": 3,
+  "confidence_intervals": {
+    "naive": {
+      "f1_point": 0.9177279178737386,
+      "mean": 0.9185186633438135,
+      "lo": 0.904139672779181,
+      "hi": 0.9314363337384715,
+      "n_boot_valid": 2000
+    },
+    "single-multiplier": {
+      "f1_point": 1.0,
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot_valid": 2000
+    },
+    "proposed": {
+      "f1_point": 1.0,
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot_valid": 2000
+    }
+  },
+  "mcnemar_proposed_vs_naive": {
+    "b": 16926,
+    "c": 0,
+    "statistic": 16924.000059080703,
+    "p_value": 0.0
+  },
+  "mcnemar_proposed_vs_single": {
+    "b": 0,
+    "c": 0,
+    "statistic": 0.0,
+    "p_value": 1.0
+  }
+}

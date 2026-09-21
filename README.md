@@ -153,6 +153,16 @@ python make_case_study_plot.py    # -> ../figures/fig_case_study.png
 # p from m up to 12 candidate constraints (synthetic scenarios; the
 # solver/attribution code is dimension-generic and unmodified).
 python benchmark_overhead_highdim.py  # -> ../results/overhead_highdim_benchmark.json
+
+# Seed-clustered bootstrap 95% CIs + paired McNemar tests for the SAC
+# replication and the m=6 arm dataset (same machinery as
+# significance_analysis.py, reused generically via significance_analysis.py's
+# helper functions), used in the paper's SAC-vs-PPO and arm-generalization
+# tables. Run after the corresponding run_full_analysis.py call above.
+python significance_analysis_generic.py --dir ../results_sac --label sac
+    # -> ../results/significance_summary_sac.json
+python significance_analysis_generic.py --dir ../results_arm --label arm
+    # -> ../results/significance_summary_arm.json
 ```
 
 ## Third environment: planar quadrotor (second robotic platform)
