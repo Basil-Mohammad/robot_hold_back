@@ -1,0 +1,62 @@
+{
+  "correctness": {
+    "n_trials": 600,
+    "max_diff": 0.0,
+    "mismatches": 0
+  },
+  "real_trajectories": {
+    "n_episodes": 600,
+    "n_cycles": 64438,
+    "mean_candidates_full": 2.8436326391259814,
+    "mean_candidates_warm": 8.7173406995872,
+    "mean_time_full_ms": 0.21779207104492077,
+    "mean_time_warm_ms": 0.29071849202318656,
+    "speedup_time": 0.7491510757683434
+  },
+  "synthetic_highdim": {
+    "4": {
+      "6": {
+        "mean_time_full_ms": 0.8719875733405994,
+        "mean_time_warm_ms": 0.0789737799990083,
+        "speedup": 11.041482038108715
+      },
+      "8": {
+        "mean_time_full_ms": 5.147931579995202,
+        "mean_time_warm_ms": 3.743521120001484,
+        "speedup": 1.3751576163120889
+      },
+      "10": {
+        "mean_time_full_ms": 9.263222793335899,
+        "mean_time_warm_ms": 3.554527546668851,
+        "speedup": 2.606034886975905
+      },
+      "12": {
+        "mean_time_full_ms": 25.14113616666312,
+        "mean_time_warm_ms": 30.366293673333377,
+        "speedup": 0.8279290333262235
+      }
+    },
+    "6": {
+      "6": {
+        "mean_time_full_ms": 0.7237248933324736,
+        "mean_time_warm_ms": 0.11430230667428987,
+        "speedup": 6.331673562763382
+      },
+      "8": {
+        "mean_time_full_ms": 5.820243066665777,
+        "mean_time_warm_ms": 0.39233788000274217,
+        "speedup": 14.834772178065238
+      },
+      "10": {
+        "mean_time_full_ms": 25.920258153335,
+        "mean_time_warm_ms": 24.2839718933313,
+        "speedup": 1.0673813273706285
+      },
+      "12": {
+        "mean_time_full_ms": 79.5366510733364,
+        "mean_time_warm_ms": 95.50402437333332,
+        "speedup": 0.8328094192389306
+      }
+    }
+  }
+}

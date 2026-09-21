@@ -1,0 +1,82 @@
+{
+  "n_instances_analyzed": 23478,
+  "n_active_instances": 23478,
+  "identities": {
+    "max_err_stationarity": 0.0,
+    "mean_err_stationarity": 0.0,
+    "max_err_energy": 1.7763568394002505e-15,
+    "mean_err_energy": 5.2129446122910604e-17
+  },
+  "attribution": {
+    "overall": {
+      "pred_naive": {
+        "precision": 0.533806361123716,
+        "recall": 0.9417072993231934,
+        "f1": 0.6813753883418462,
+        "f1_mean_across_seeds": 0.6823189791648435,
+        "f1_std_across_seeds": 0.008026118378456026
+      },
+      "pred_single": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_mean_across_seeds": 1.0,
+        "f1_std_across_seeds": 0.0
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_mean_across_seeds": 1.0,
+        "f1_std_across_seeds": 0.0
+      }
+    },
+    "by_category": {
+      "cause": {
+        "n": 25880,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "shadowed": {
+        "n": 22602,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "counter-acting": {
+        "n": 1602,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "bystander": {
+        "n": 184696,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      }
+    },
+    "category_counts": {
+      "bystander": 184696,
+      "cause": 25880,
+      "shadowed": 22602,
+      "counter-acting": 1602
+    },
+    "n_seeds": 3
+  },
+  "counterfactual": {
+    "n": 23478,
+    "bound_always_holds": true,
+    "mean_rel_gap": 0.0,
+    "median_rel_gap": 0.0,
+    "p90_rel_gap": 0.0,
+    "max_rel_gap": 0.0
+  },
+  "stability": {
+    "n": 23478,
+    "spearman_rho_kappa_vs_sensitivity": 0.9170005871400286,
+    "spearman_p_kappa_vs_sensitivity": 0.0,
+    "frac_any_switch": 0.0001703722633955192
+  }
+}

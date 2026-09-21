@@ -72,8 +72,14 @@ def category(v_i, y_i):
 
 def analyze_instance(rec, angles, rng):
     H, A, b, u_pi, u_star, pos = rec["H"], rec["A"], rec["b"], rec["u_pi"], rec["u_star"], rec["pos"]
-    obstacles_eff = rec["obstacles_eff"]
-    alpha = rec["alpha"]
+    # obstacles_eff (a list of circular (ox, oy, r_eff) tuples living in the
+    # SAME 2D space as the action, i.e. m=2) is required for the closed-form
+    # counterfactual of Sec. IV-C. It is absent for the m=6 arm dataset,
+    # whose action space is joint-velocity, not task-space position, so the
+    # 2D angular-sweep certificate does not directly apply there (Sec. IX-H);
+    # attribution/identity/stability analysis proceeds normally regardless.
+    obstacles_eff = rec.get("obstacles_eff")
+    alpha = rec.get("alpha")
 
     res = solve_qp(H, A, b, u_pi)
     if not res["feasible"] or len(res["active_set"]) == 0:
@@ -108,7 +114,7 @@ def analyze_instance(rec, angles, rng):
     # actually infeasible (some real obstacle currently violated)
     cf_row = None
     violated_idx = [i for i in range(A.shape[0]) if s[i] < -1e-9]
-    if violated_idx:
+    if violated_idx and obstacles_eff is not None and A.shape[1] == 2:
         d_lower = 0.0
         for i in violated_idx:
             ox, oy, r = obstacles_eff[i]

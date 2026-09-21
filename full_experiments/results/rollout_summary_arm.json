@@ -1,0 +1,30 @@
+{
+  "per_seed": [
+    {
+      "seed": 0,
+      "n_qp_instances": 11094,
+      "n_episodes": 60,
+      "success_rate": 0.2,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    },
+    {
+      "seed": 1,
+      "n_qp_instances": 14240,
+      "n_episodes": 60,
+      "success_rate": 0.11666666666666667,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    },
+    {
+      "seed": 2,
+      "n_qp_instances": 14860,
+      "n_episodes": 60,
+      "success_rate": 0.1,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    }
+  ],
+  "total_qp_instances": 40194,
+  "elapsed_sec": 80.52674150466919
+}

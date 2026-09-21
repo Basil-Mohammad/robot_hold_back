@@ -1,0 +1,37 @@
+{
+  "seed": 0,
+  "timesteps": 100000,
+  "elapsed_sec": 702.4066607952118,
+  "history": [
+    {
+      "timesteps": 20000,
+      "success_rate": 1.0,
+      "mean_return": 107.07712577939955,
+      "mean_intervention_energy": 78.35134462507662
+    },
+    {
+      "timesteps": 40000,
+      "success_rate": 0.9,
+      "mean_return": 102.05041745420813,
+      "mean_intervention_energy": 41.981551905996035
+    },
+    {
+      "timesteps": 60000,
+      "success_rate": 1.0,
+      "mean_return": 107.52716608995516,
+      "mean_intervention_energy": 19.485288094734173
+    },
+    {
+      "timesteps": 80000,
+      "success_rate": 1.0,
+      "mean_return": 107.56062319679602,
+      "mean_intervention_energy": 15.20163834317728
+    },
+    {
+      "timesteps": 100000,
+      "success_rate": 1.0,
+      "mean_return": 107.71757947017136,
+      "mean_intervention_energy": 10.63133620300668
+    }
+  ]
+}

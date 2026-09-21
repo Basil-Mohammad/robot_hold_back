@@ -11,3 +11,7 @@ full_experiments/results/real_attribution.csv
 full_experiments/results/real_counterfactual.csv
 full_experiments/results/real_stability.csv
 full_experiments/results_quad/
+full_experiments/results_sac/
+full_experiments/results_arm/
+full_experiments/results/rollout_qp_dataset_sac.pkl
+full_experiments/results/rollout_qp_dataset_arm.pkl

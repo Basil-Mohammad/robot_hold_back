@@ -1,0 +1,77 @@
+{
+  "seed": 1,
+  "timesteps": 150000,
+  "elapsed_sec": 231.31729412078857,
+  "history": [
+    {
+      "timesteps": 15000,
+      "success_rate": 0.2,
+      "mean_return": 4.470226642738731,
+      "mean_intervention_energy": 222.7456747761377,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 30000,
+      "success_rate": 0.3,
+      "mean_return": 8.992766678022988,
+      "mean_intervention_energy": 256.97725739296504,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 45000,
+      "success_rate": 0.4,
+      "mean_return": 12.927889987131513,
+      "mean_intervention_energy": 268.1258817798569,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 60000,
+      "success_rate": 0.2,
+      "mean_return": 8.264625239226534,
+      "mean_intervention_energy": 213.54138419602555,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 75000,
+      "success_rate": 0.2,
+      "mean_return": 6.353077522075686,
+      "mean_intervention_energy": 491.12691372870194,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 90000,
+      "success_rate": 0.1,
+      "mean_return": 3.825262132416154,
+      "mean_intervention_energy": 375.1217276679209,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 105000,
+      "success_rate": 0.1,
+      "mean_return": 5.282490276551482,
+      "mean_intervention_energy": 278.0861556069516,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 120000,
+      "success_rate": 0.2,
+      "mean_return": 6.110724752748241,
+      "mean_intervention_energy": 427.0679588588217,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 135000,
+      "success_rate": 0.2,
+      "mean_return": 7.260771543190759,
+      "mean_intervention_energy": 468.9498433659727,
+      "collision_rate": 0.0
+    },
+    {
+      "timesteps": 150000,
+      "success_rate": 0.2,
+      "mean_return": 7.001044695225387,
+      "mean_intervention_energy": 413.4412664932505,
+      "collision_rate": 0.0
+    }
+  ]
+}
