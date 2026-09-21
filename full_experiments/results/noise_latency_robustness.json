@@ -1,0 +1,72 @@
+{
+  "noise": [
+    {
+      "sigma": 0.01,
+      "n_instances": 800,
+      "n_valid": 800,
+      "mean_exact_f1": 1.0,
+      "mean_taxonomy_agreement": 0.9880416666666667,
+      "frac_any_switch": 0.1025,
+      "spearman_rho_kappa_vs_displacement": 0.705292500457032,
+      "spearman_p": 2.3808080919701227e-121
+    },
+    {
+      "sigma": 0.02,
+      "n_instances": 800,
+      "n_valid": 800,
+      "mean_exact_f1": 1.0,
+      "mean_taxonomy_agreement": 0.97794375,
+      "frac_any_switch": 0.2075,
+      "spearman_rho_kappa_vs_displacement": 0.597164667444793,
+      "spearman_p": 1.8036696942777198e-78
+    },
+    {
+      "sigma": 0.05,
+      "n_instances": 800,
+      "n_valid": 798,
+      "mean_exact_f1": 1.0,
+      "mean_taxonomy_agreement": 0.946470342522974,
+      "frac_any_switch": 0.44862155388471175,
+      "spearman_rho_kappa_vs_displacement": 0.5283297384057787,
+      "spearman_p": 1.424164679689456e-58
+    }
+  ],
+  "latency": [
+    {
+      "tau": 1,
+      "n_instances": 672,
+      "n_skipped_no_history": 128,
+      "n_valid": 663,
+      "mean_pos_shift": 0.07914024040986532,
+      "mean_exact_f1": 1.0,
+      "mean_taxonomy_agreement": 0.9585218702865762,
+      "frac_any_switch": 0.12368024132730016,
+      "spearman_rho_kappa_vs_displacement": 0.30802896072540487,
+      "spearman_p": 4.876843554659672e-16
+    },
+    {
+      "tau": 2,
+      "n_instances": 637,
+      "n_skipped_no_history": 163,
+      "n_valid": 616,
+      "mean_pos_shift": 0.15699170324035264,
+      "mean_exact_f1": 1.0,
+      "mean_taxonomy_agreement": 0.9199675324675325,
+      "frac_any_switch": 0.26136363636363635,
+      "spearman_rho_kappa_vs_displacement": 0.19441143115887158,
+      "spearman_p": 1.163073985996829e-06
+    },
+    {
+      "tau": 3,
+      "n_instances": 603,
+      "n_skipped_no_history": 197,
+      "n_valid": 584,
+      "mean_pos_shift": 0.23313838929147726,
+      "mean_exact_f1": 1.0,
+      "mean_taxonomy_agreement": 0.8763698630136987,
+      "frac_any_switch": 0.3647260273972603,
+      "spearman_rho_kappa_vs_displacement": 0.07366509599644776,
+      "spearman_p": 0.07527243686763646
+    }
+  ]
+}
