@@ -1,0 +1,106 @@
+{
+  "main_comparison": {
+    "n_rows": 644380,
+    "n_seeds": 10,
+    "confidence_intervals": {
+      "naive": {
+        "f1_point": 0.675931792640006,
+        "mean": 0.6760206684294567,
+        "lo": 0.6582104777157226,
+        "hi": 0.6959084631463482,
+        "n_boot_valid": 2000
+      },
+      "single-multiplier": {
+        "f1_point": 1.0,
+        "mean": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n_boot_valid": 2000
+      },
+      "proposed": {
+        "f1_point": 1.0,
+        "mean": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n_boot_valid": 2000
+      }
+    },
+    "mcnemar_proposed_vs_naive": {
+      "b": 70071,
+      "c": 0,
+      "statistic": 70069.00001427124,
+      "p_value": 0.0
+    },
+    "mcnemar_proposed_vs_single": {
+      "b": 0,
+      "c": 0,
+      "statistic": 0.0,
+      "p_value": 1.0
+    }
+  },
+  "posthoc_comparison": {
+    "n_instances": 150,
+    "aligned": true,
+    "results": {
+      "proposed": {
+        "f1_point": 1.0,
+        "mean": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n_boot_valid": 2000
+      },
+      "shap": {
+        "f1_point": 0.42424242424242425,
+        "mean": 0.42408390449166244,
+        "lo": 0.39281080256690015,
+        "hi": 0.456279963630352,
+        "n_boot_valid": 2000,
+        "mcnemar_vs_proposed": {
+          "b": 475,
+          "c": 0,
+          "statistic": 473.0021052631579,
+          "p_value": 0.0
+        }
+      },
+      "lime": {
+        "f1_point": 0.3352601156069364,
+        "mean": 0.3351527430831278,
+        "lo": 0.3173047245963913,
+        "hi": 0.35394903444633186,
+        "n_boot_valid": 2000,
+        "mcnemar_vs_proposed": {
+          "b": 690,
+          "c": 0,
+          "statistic": 688.0014492753623,
+          "p_value": 0.0
+        }
+      },
+      "saliency": {
+        "f1_point": 1.0,
+        "mean": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n_boot_valid": 2000,
+        "mcnemar_vs_proposed": {
+          "b": 0,
+          "c": 0,
+          "statistic": 0.0,
+          "p_value": 1.0
+        }
+      },
+      "rule_based": {
+        "f1_point": 0.9079754601226994,
+        "mean": 0.9082941413545207,
+        "lo": 0.8780378594830724,
+        "hi": 0.9371069182389937,
+        "n_boot_valid": 2000,
+        "mcnemar_vs_proposed": {
+          "b": 30,
+          "c": 0,
+          "statistic": 28.033333333333335,
+          "p_value": 1.192436684949172e-07
+        }
+      }
+    }
+  }
+}
