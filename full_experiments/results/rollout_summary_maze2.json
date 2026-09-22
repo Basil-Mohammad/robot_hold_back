@@ -1,0 +1,46 @@
+{
+  "per_seed": [
+    {
+      "seed": 0,
+      "n_qp_instances": 8384,
+      "n_episodes": 60,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    },
+    {
+      "seed": 1,
+      "n_qp_instances": 7805,
+      "n_episodes": 60,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    },
+    {
+      "seed": 2,
+      "n_qp_instances": 7741,
+      "n_episodes": 60,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    },
+    {
+      "seed": 3,
+      "n_qp_instances": 7694,
+      "n_episodes": 60,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    },
+    {
+      "seed": 4,
+      "n_qp_instances": 7772,
+      "n_episodes": 60,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "n_infeasible_fallbacks": 0
+    }
+  ],
+  "total_qp_instances": 39396,
+  "elapsed_sec": 64.159259557724
+}

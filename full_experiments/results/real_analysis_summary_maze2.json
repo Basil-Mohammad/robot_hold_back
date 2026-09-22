@@ -1,0 +1,82 @@
+{
+  "n_instances_analyzed": 12000,
+  "n_active_instances": 12000,
+  "identities": {
+    "max_err_stationarity": 0.0,
+    "mean_err_stationarity": 0.0,
+    "max_err_energy": 8.881784197001252e-16,
+    "mean_err_energy": 6.174833471237797e-17
+  },
+  "attribution": {
+    "overall": {
+      "pred_naive": {
+        "precision": 0.41957890837243766,
+        "recall": 0.9621265751097268,
+        "f1": 0.584332946386345,
+        "f1_mean_across_seeds": 0.5852858000870418,
+        "f1_std_across_seeds": 0.017192044569098196
+      },
+      "pred_single": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_mean_across_seeds": 1.0,
+        "f1_std_across_seeds": 0.0
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_mean_across_seeds": 1.0,
+        "f1_std_across_seeds": 0.0
+      }
+    },
+    "by_category": {
+      "cause": {
+        "n": 13591,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "shadowed": {
+        "n": 18801,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "counter-acting": {
+        "n": 535,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "bystander": {
+        "n": 87073,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      }
+    },
+    "category_counts": {
+      "bystander": 87073,
+      "shadowed": 18801,
+      "cause": 13591,
+      "counter-acting": 535
+    },
+    "n_seeds": 5
+  },
+  "counterfactual": {
+    "n": 12000,
+    "bound_always_holds": true,
+    "mean_rel_gap": 0.0,
+    "median_rel_gap": 0.0,
+    "p90_rel_gap": 0.0,
+    "max_rel_gap": 0.0
+  },
+  "stability": {
+    "n": 12000,
+    "spearman_rho_kappa_vs_sensitivity": 0.9252337265641231,
+    "spearman_p_kappa_vs_sensitivity": 0.0,
+    "frac_any_switch": 0.0003333333333333333
+  }
+}

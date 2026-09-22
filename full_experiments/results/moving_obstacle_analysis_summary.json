@@ -1,0 +1,114 @@
+{
+  "n_instances_analyzed": 15000,
+  "n_active_instances": 14993,
+  "n_human_row_binding": 2811,
+  "identities": {
+    "max_err_stationarity": 0.0,
+    "max_err_energy": 1.1244338793403585e-12
+  },
+  "attribution": {
+    "overall": {
+      "pred_naive": {
+        "precision": 0.45549438569715467,
+        "recall": 0.9777114777114777,
+        "f1": 0.6214628341947719,
+        "n": 164923
+      },
+      "pred_single": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 164923
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 164923
+      }
+    },
+    "moving_row_only": {
+      "pred_naive": {
+        "precision": 0.9558875844895055,
+        "recall": 0.9944485566247224,
+        "f1": 0.9747868674043171,
+        "n": 14993
+      },
+      "pred_single": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 14993
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 14993
+      }
+    },
+    "static_rows_only": {
+      "pred_naive": {
+        "precision": 0.4139783359404976,
+        "recall": 0.9745692051139522,
+        "f1": 0.5811115944731009,
+        "n": 149930
+      },
+      "pred_single": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 149930
+      },
+      "pred_interval": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 149930
+      }
+    },
+    "by_category": {
+      "cause": {
+        "n": 16713,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "shadowed": {
+        "n": 19979,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "counter-acting": {
+        "n": 381,
+        "pred_naive": 1.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      },
+      "bystander": {
+        "n": 127850,
+        "pred_naive": 0.0,
+        "pred_single": 0.0,
+        "pred_interval": 0.0
+      }
+    },
+    "category_counts": {
+      "bystander": 127850,
+      "shadowed": 19979,
+      "cause": 16713,
+      "counter-acting": 381
+    }
+  },
+  "counterfactual": {
+    "n": 14993,
+    "bound_always_holds": true,
+    "mean_rel_gap": 0.0,
+    "max_rel_gap": 0.0
+  },
+  "stability": {
+    "n": 14993,
+    "spearman_rho_kappa_vs_sensitivity": 0.9351533822718636,
+    "spearman_p_kappa_vs_sensitivity": 0.0
+  }
+}

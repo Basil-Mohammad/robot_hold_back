@@ -1,0 +1,55 @@
+{
+  "seed": 1,
+  "timesteps": 200000,
+  "elapsed_sec": 275.40228271484375,
+  "history": [
+    {
+      "timesteps": 25000,
+      "success_rate": 0.5,
+      "mean_return": 81.38591145359771,
+      "mean_intervention_energy": 269.2049081004527
+    },
+    {
+      "timesteps": 50000,
+      "success_rate": 1.0,
+      "mean_return": 107.5237404737532,
+      "mean_intervention_energy": 99.2221608837142
+    },
+    {
+      "timesteps": 75000,
+      "success_rate": 1.0,
+      "mean_return": 107.63815324332795,
+      "mean_intervention_energy": 57.43688234090581
+    },
+    {
+      "timesteps": 100000,
+      "success_rate": 1.0,
+      "mean_return": 107.69103804946317,
+      "mean_intervention_energy": 44.564694672174326
+    },
+    {
+      "timesteps": 125000,
+      "success_rate": 1.0,
+      "mean_return": 108.06990941051708,
+      "mean_intervention_energy": 46.5481731634559
+    },
+    {
+      "timesteps": 150000,
+      "success_rate": 1.0,
+      "mean_return": 107.63464391839231,
+      "mean_intervention_energy": 43.1614610133067
+    },
+    {
+      "timesteps": 175000,
+      "success_rate": 1.0,
+      "mean_return": 107.73707035511703,
+      "mean_intervention_energy": 36.378098096373115
+    },
+    {
+      "timesteps": 200000,
+      "success_rate": 1.0,
+      "mean_return": 107.64332730414435,
+      "mean_intervention_energy": 42.64186531240302
+    }
+  ]
+}
